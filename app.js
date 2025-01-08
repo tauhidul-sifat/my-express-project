@@ -9,6 +9,9 @@ app.get("/", (req, res) => {
   res.send("Hello World and All super props");
 });
 
+app.delete("/", (req, res) => {
+  res.send("Hello World deleted");
+});
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
