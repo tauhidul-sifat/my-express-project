@@ -13,6 +13,10 @@ app.post("/", (req, res) => {
   res.send("Hello World Posted successfully");
 });
 
+app.delete("/", (req, res) => {
+  res.send("Hello World deleted");
+});
+
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
